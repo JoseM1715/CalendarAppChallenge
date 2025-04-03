@@ -7,7 +7,6 @@ from app.services.util import generate_unique_id, reminder_not_found_error, slot
 class Reminder:
     EMAIL = "email"
     SYSTEM = "system"
-
     date_time: datetime
     type: str = field(default=EMAIL)
 
